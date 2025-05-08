@@ -1,0 +1,16 @@
+{
+  "editor.formatOnPaste": true,
+  "editor.formatOnSave": true,
+  "editor.rulers": [80, 120],
+  "go.inlayHints.constantValues": true,
+  "go.inlayHints.functionTypeParameters": true,
+  "go.inlayHints.parameterNames": true,
+  "cSpell.words": [
+    "codeeducationtest",
+    "enconder",
+    "fannout",
+    "microsservico",
+    "parseada",
+    "rabbitmq"
+  ]
+}

@@ -1,0 +1,29 @@
+# EditorConfig is awesome: https://EditorConfig.org
+
+# Top-most EditorConfig file
+root = true
+
+# Unix-style newlines with a newline ending every file
+[*]
+end_of_line = lf
+insert_final_newline = true
+
+# Indentation settings for Go files
+[*.go]
+indent_style = tab
+indent_size = 4
+
+# Set charset to UTF-8 for all files
+charset = utf-8
+
+# Trim trailing whitespace in all files
+trim_trailing_whitespace = true
+
+# Specific settings for Makefiles
+[Makefile]
+indent_style = tab
+
+# Settings for Markdown files
+[*.md]
+max_line_length = off
+trim_trailing_whitespace = false
