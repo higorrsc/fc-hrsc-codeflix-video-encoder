@@ -11,6 +11,7 @@
     "fannout",
     "microsservico",
     "parseada",
-    "rabbitmq"
+    "rabbitmq",
+    "scons"
   ]
 }
