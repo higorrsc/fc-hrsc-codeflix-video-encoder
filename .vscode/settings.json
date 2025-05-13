@@ -6,12 +6,26 @@
   "go.inlayHints.functionTypeParameters": true,
   "go.inlayHints.parameterNames": true,
   "cSpell.words": [
+    "asaskevich",
+    "AUUID",
     "codeeducationtest",
+    "codeflix",
+    "davecgh",
+    "difflib",
     "enconder",
     "fannout",
+    "github",
+    "gopkg",
+    "govalidator",
+    "higorrsc",
+    "hrsc",
     "microsservico",
+    "notnull",
     "parseada",
+    "pmezard",
     "rabbitmq",
-    "scons"
+    "scons",
+    "stretchr",
+    "uuid"
   ]
 }
