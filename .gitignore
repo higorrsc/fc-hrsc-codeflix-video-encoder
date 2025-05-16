@@ -21,6 +21,8 @@
 # Dependency directories (remove the comment below to include it)
 # vendor/
 
+bucket-credential.json
+
 # Go workspace file
 go.work
 
