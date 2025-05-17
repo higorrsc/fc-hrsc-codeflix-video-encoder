@@ -4,6 +4,7 @@ import (
 	"io"
 	"log"
 	"os"
+	"os/exec"
 
 	"github.com/higorrsc/fc-hrsc-codeflix-video-encoder/application/repositories"
 	"github.com/higorrsc/fc-hrsc-codeflix-video-encoder/domain"
@@ -57,4 +58,30 @@ func (v *VideoService) Download(bucketName string) error {
 	log.Printf("Video %s downloaded from bucket %s", v.Video.ID, bucketName)
 
 	return nil
+}
+
+func (v *VideoService) Fragment() error {
+	err := os.Mkdir(os.Getenv("LOCAL_STORAGE_PATH")+"/"+v.Video.ID, os.ModePerm)
+	if err != nil {
+		return err
+	}
+
+	sourceFile := os.Getenv("LOCAL_STORAGE_PATH") + "/" + v.Video.ID + ".mp4"
+	targetFile := os.Getenv("LOCAL_STORAGE_PATH") + "/" + v.Video.ID + ".frag"
+
+	cmd := exec.Command("mp4fragment", sourceFile, targetFile)
+	output, err := cmd.CombinedOutput()
+	if err != nil {
+		return err
+	}
+
+	printOutput(output)
+
+	return nil
+}
+
+func printOutput(output []byte) {
+	if len(output) > 0 {
+		log.Printf("=====> Output: %s\n", string(output))
+	}
 }
