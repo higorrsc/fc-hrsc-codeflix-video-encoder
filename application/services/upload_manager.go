@@ -115,7 +115,7 @@ func (vu *VideoUpload) uploadWorker(in chan int, returnChannel chan string, clie
 		returnChannel <- ""
 	}
 
-	returnChannel <- "uploaded completed"
+	returnChannel <- "upload completed"
 }
 
 func getClientUpload() (*storage.Client, context.Context, error) {
