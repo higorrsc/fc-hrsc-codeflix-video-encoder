@@ -6,6 +6,7 @@
   "go.inlayHints.functionTypeParameters": true,
   "go.inlayHints.parameterNames": true,
   "cSpell.words": [
+    "amqp",
     "asaskevich",
     "AUUID",
     "codeeducationtest",
@@ -34,8 +35,11 @@
     "scons",
     "sqlite",
     "sslmode",
+    "streadway",
     "stretchr",
+    "SWQOKODSQALRPCLNMEQG",
     "uuid",
-    "varchar"
+    "varchar",
+    "Vhost"
   ]
 }
